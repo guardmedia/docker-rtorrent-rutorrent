@@ -174,7 +174,7 @@ sed -e "s!@RT_LOG_LEVEL@!$RT_LOG_LEVEL!g" \
   -e "s!@RT_DHT_PORT@!$RT_DHT_PORT!g" \
   -e "s!@RT_INC_PORT@!$RT_INC_PORT!g" \
   -e "s!@XMLRPC_SIZE_LIMIT@!$XMLRPC_SIZE_LIMIT!g" \
-  -e "s!@DOWNLOAD_ROOT@!${DOWNLOAD_ROOT}!g" \
+  -e "s!@DOWNLOAD_ROOT@!${DOWNLOAD_ROOT}/!g" \
   -e "s!@DOWNLOAD_COMPLETE@!${DOWNLOAD_COMPLETE}!g" \
   -e "s!@DOWNLOAD_INCOMPLETE@!${DOWNLOAD_INCOMPLETE}!g" \
   /tpls/etc/rtorrent/.rtlocal.rc > /etc/rtorrent/.rtlocal.rc
